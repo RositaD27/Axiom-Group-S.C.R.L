@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Group S.C.R.L. | Consultoría y Ejecución de Obras de Ingeniería</title>
+    <style>
+        /* Estilos Base Estilo Corporativo e Industrial */
+        :root {
+            --azul-corporativo: #1e3a8a;
+            --gris-oscuro: #334155;
+            --gris-claro: #f8fafc;
+            --naranja-alerta: #ea580c;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--gris-oscuro);
+            background-color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* BANNER DE CONTINGENCIA (Oculto por defecto, cambiar display a 'block' en emergencia) */
+        .banner-emergencia {
+            display: none; /* Cambiar a 'block' durante un desastre */
+            background-color: var(--naranja-alerta);
+            color: var(--blanco);
+            text-align: center;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-bottom: 4px solid #b45309;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--azul-corporativo);
+            color: var(--blanco);
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            font-size: 0.85rem;
+            display: block;
+            color: #93c5fd;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección Principal / Hero */
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(51, 65, 85, 0.9)), url('https://unsplash.com') no-repeat center center/cover;
+            color: var(--blanco);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Contenedor General */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones de Contenido */
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--blanco);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--azul-corporativo);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--azul-corporativo);
+        }
+
+        /* Repositorio Documental */
+        .repositorio {
+            background-color: var(--blanco);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-descarga {
+            display: inline-block;
+            background-color: var(--azul-corporativo);
+            color: var(--blanco);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .btn-descarga:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-top: 1px solid #475569;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER DE CONTINGENCIA (Activar cambiando style="display: block;") -->
+    <div class="banner-emergencia" id="bannerContingencia">
+        ⚠️ AVISO DE EMERGENCIA: Protocolos de seguridad activados. Nuestras obras se encuentran en evaluación estructural preventiva.
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>AXIOM GROUP</h1>
+                <span>Sociedad Comercial de Responsabilidad Limitada | RUC: 20568143290</span>
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#repositorio">Documentos y RNP</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <h2>Ingeniería y Consultoría de Obras</h2>
+        <p>Garantizamos solvencia técnica, supervisión rigurosa y ejecución eficiente en proyectos de infraestructura pública y privada a nivel nacional.</p>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        
+        <!-- Sección Servicios -->
+        <section id="servicios">
+            <h2>Nuestras Áreas de Especialización</h2>
+            <div class="grid-servicios">
+                <div class="card">
+                    <h3>Consultoría y Supervisión</h3>
+                    <p>Inspección técnica integral de obras de ingeniería, asegurando el estricto cumplimiento de los estándares normativos, plazos contractuales y presupuestos asignados.</p>
+                </div>
+                <div class="card">
+                    <h3>Obras de Saneamiento</h3>
+                    <p>Desarrollo y ejecución de infraestructura hidráulica, redes de agua potable, alcantarillado y plantas de tratamiento con altos estándares de calidad ambiental.</p>
+                </div>
+                <div class="card">
+                    <h3>Infraestructura Vial y Edificaciones</h3>
+                    <p>Supervisión y control técnico en la construcción de carreteras, puentes, pavimentaciones urbanas y estructuras civiles multifuncionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Repositorio Técnico (Eje de la Parte I del Plan) -->
+        <section class="repositorio" id="repositorio">
+            <h2>Repositorio Documental Corporativo</h2>
+            <p>Canal de respaldo digital para la validación de credenciales institucionales ante entidades estatales y consorcios privados.</p>
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Constancia de Capacidad (RNP)</h4>
+                    <p>Registro Nacional de Proveedores vigente para consultoría y ejecución de obras con el Estado.</p>
+                    <a href="#" class="btn-descarga">📄 Descargar PDF (Simulado)</a>
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Ficha RUC (SUNAT)</h4>
+                    <p>Información registral oficial de Axiom Group S.C.R.L. con estado Activo y Habido.</p>
+                    <a href="#" class="btn-descarga">📄 Descargar PDF (Simulado)</a>
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Brochure Técnico de Obras</h4>
+                    <p>Portafolio detallado de proyectos ejecutados, firmas de actas de entrega y conformidad.</p>
+                    <a href="#" class="btn-descarga">📄 Descargar PDF (Simulado)</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Axiom Group S.C.R.L. Todos los derechos reservados.</p>
+        <p style="font-size: 0.8rem; margin-top: 5px;">Sede Central: La Victoria, Lima, Perú | Teléfono Central de Coordinación: Registrado en OSCE</p>
+    </footer>
+
+</body>
+</html>
